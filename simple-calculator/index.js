@@ -13,6 +13,7 @@ for(let i=0; i<buttonsEl.length;i++){
             appendValue(buttonValue);
         }
 
+        
     });
 }
 
