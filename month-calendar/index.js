@@ -3,8 +3,12 @@ const fullDateEl = document.querySelector(".date p");
 const daysEl = document.querySelector(".days");
 
 const monthInd = new Date().getMonth();
+//new Date(year, month, date) => 0 date means previous date
 const lastDay = new Date(new Date().getFullYear(),monthInd + 1, 0).getDate();
 const firstDay = new Date(new Date().getFullYear(),monthInd, 0).getDay() - 1;
+//if the calender's week starts at Sunday, then -1 is not needed
+//getDay() returns the number indicating the index of a week. 
+//ex) returns 2 -> tuesday. 
 
 const months = [
     "January",
